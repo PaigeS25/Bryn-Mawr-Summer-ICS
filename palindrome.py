@@ -1,4 +1,5 @@
-word = input("Enter word: ").lower().strip() 
+word = input("Enter word: ").lower().strip().split()
+word = "".join(word)  
 copy = "" 
 
 for char in word:
