@@ -112,7 +112,7 @@ while x <= 100:
         print(f"{x} is divisable by 3.")
     x = x + 1 
 """
-
+"""
 cash = 0
 bank = 100
 check = True
@@ -134,4 +134,82 @@ while check == True:
         check = False
     else:
         print("Invalid option.")
-        
+"""
+nums = [10,20,30,40,50]
+for x in nums:
+    print(x)
+
+fruits = ["oranges", "apples", "mangoes", "cherries", "grapes"]
+for fruit in fruits:
+    if fruit == "cherries" or fruit == "grapes": 
+        print(f"{fruit} is a small fruit.")
+    elif fruit == "apples" or fruit == "oranges" or fruit == "magoes":
+        print(f"{fruit} is a large fruit.") 
+"""
+nums = [23,13,45,40,87,35,63,22,9,1,50,27,95,100,21,28,38,80,29,53,16,32,60,65,79,8,66,7,70,4,99,78,88,10,46,25,47,93,83,36,56,91,97,96,2,57,26,54,55,98,51,37,17,49,69,72,59,64,77,94,24,82,30,31,39,43,76,92,52,74,11,84,58,67,34,12,41,68,81,85,19,20,44,18,15,14,61,42,3,86,48,75,6,62,89,73,90,71,5,33]
+total = 0 
+for num in nums:
+    total = total + num
+print(f"sum of nums is {total}")
+amt = len(nums)
+print(amt) 
+
+avg = total/amt 
+
+print(f"the average of nums is {avg}")
+
+nums = list(range(100))
+#list() makes the inbetween () a list. 
+
+print(nums) 
+"""
+
+mylist = [5,7,1,3,6,8,2,10]
+nums = list(range(len(mylist)))
+print(nums) 
+
+total = 0 
+for i in range(len(mylist)):
+    total = total +mylist[i] 
+
+mylist = [1,2,3,4]
+for i in range(len(mylist)):
+    mylist[i] = mylist[i] + 2
+
+print(mylist) 
+
+fruits = ["orage", "mango", "grapes"]
+prices = [1.25,1.50,2.25]
+
+#these lists are connected with indices. 
+
+"""
+print("Welcome to our store!")
+for i in range(len(fruits)):
+    print(f"fruit name: {fruits[i]}")
+    print(f"fruit price: {prices[i]}")
+
+code = "aabbbabbabababbabbabbababababbabbabbabbaabbaaababaababaaabaaababababababaaaabab"
+total_a = 0
+total_b = 0
+
+for char in code:
+    if char == "a":
+        total_a = total_a + 1
+    elif char == "b":
+        total_b = total_b + 1 
+
+print(f"Total a's = {total_a}.")
+print(f"Total b's = {total_b}.")
+"""
+"""
+for char in str:
+    strcopy = strcopy + char
+    print(strcopy)  
+"""
+str = "hello" 
+strcopy = "" 
+
+for char in str:
+    strcopy = char + strcopy 
+    print(strcopy) 
