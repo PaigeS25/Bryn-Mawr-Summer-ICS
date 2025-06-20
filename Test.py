@@ -99,3 +99,39 @@ print(fruits)
 
 mylist = [1,2,3,"Paige Stevens",True]
 print(mylist) 
+
+"""
+x = 0
+while x < 5:
+    print(x)
+    x = x + 1
+
+x = 1
+while x <= 100:
+    if x % 3 == 0:
+        print(f"{x} is divisable by 3.")
+    x = x + 1 
+"""
+
+cash = 0
+bank = 100
+check = True
+print("Welcome to the bank!")
+print("1. Withdraw.")
+print("2. Deposit")
+print("3. Quit")
+while check == True:
+    print(f"your balence is {cash}: ")
+    print(f"bank's balence is {bank}: ")
+    print("Select your option from the list above: ")
+    if option == "withdraw":
+        bank = bank - 10
+        cash = cash + 10
+    elif option == "deposit":
+        bank = bank + 10
+        cash = cash - 10
+    elif option == "quit":
+        check = False
+    else:
+        print("Invalid option.")
+        
