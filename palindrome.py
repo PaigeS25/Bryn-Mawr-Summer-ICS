@@ -1,12 +1,16 @@
-word = input("Enter word: ").lower().strip().split()
-word = "".join(word)  
-copy = "" 
 
-for char in word:
-    copy = char + copy 
-    print(copy) 
+check = True
 
-if copy == word:
-    print(f"{word} is a palindrome!")
-else:
-    print(f"{word} is not a palindrome. :(")
+while check == True:
+    word = input("Enter word: ").lower().strip().split()
+    word = "".join(word)  
+    copy = "" 
+    if word == "quit":
+        print("Bye!")
+        break 
+    for char in word:
+        copy = char + copy 
+    if copy == word: 
+        print(f"{word} is a palindrome!")
+    else:
+        print(f"{word} is not a palindrome. :(")
