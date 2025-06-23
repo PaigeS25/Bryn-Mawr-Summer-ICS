@@ -213,3 +213,21 @@ strcopy = ""
 for char in str:
     strcopy = char + strcopy 
     print(strcopy) 
+"""
+for i in range(1,13):
+    for j in range(1,13):
+        print(i*j, end = " ")
+    print()  
+"""
+entrees = ["Steak", "Pasta", "Roasted Chicken", "Grilled Shrimp"]
+sides = ["Fries", "Breadsticks", "Side Salad"]
+
+print("Welcome to Olive Garden!")
+for dish in entrees:
+    for side in sides:
+        print(f"Main dish: {dish}, Side: {side}")
+
+for i in range(1,6):
+    for j in range(i): 
+        print("*", end = " ")
+    print() 
