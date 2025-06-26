@@ -56,8 +56,8 @@ def main():
     while check == True:
         printBoard(board)
         print(f"Player {player}'s turn.") 
-        row = int(input("Enter the row in which you would like to place your peice:"))
-        column = int(input("Enter the column in which you would like to place your peice: "))
+        row = int(input("Enter the row in which you would like to place your piece:"))
+        column = int(input("Enter the column in which you would like to place your piece: "))
         board[row][column] = player 
         if checkWinner(player, board) == True:
             check = False 
